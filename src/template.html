@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .note{
+        display: flex;
+        align-items: center;
+        background-color: aliceblue;
+        padding: 1rem 3rem;
+        cursor: pointer;
+        max-width: 500px;
+        margin: 1rem auto;
+    }
+    .tags{
+        margin: 0 12px;
+        padding: 0 12px;
+        background-color: lightblue;
+    }
+    .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 22;
+        color: lightseagreen;
+    }
+</style>
+<body>
+    <div class="center" style="margin: 24px 0px;">
+        <h1>NOTES</h1>
+    </div>
+    <div class="notes">
+        {{ notes }}
+    </div>
+</body>
+</html>
